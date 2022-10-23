@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Inter';
+    src: url('../static/fonts/static/Inter-Regular.ttf');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url('../static/fonts/static/Inter-Bold.ttf');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url('../static/fonts/static/Inter-ExtraBold.ttf');
+    font-weight: 800;
+  }
+
+  ::selection {
+    background-color: hsl(233, 8%, 79%);
+  }
+
+  html {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    counter-reset: section;
+  }
+
+  :root {
+    --max-width: 1110px;
+  }
+
+  .animation-1 {
+    animation: move-1 0.6s ease-in-out;
+  }
+
+  .animation-2 {
+    animation: move-2 0.6s ease-in-out;
+  }
+
+  .animation-3 {
+    animation: move-3 0.6s ease-in-out;
+  }
+
+  .animation-4 {
+    animation: move-4 0.6s ease-in-out;
+  }
+
+  @keyframes move-1 {
+    from {
+      transform: translateY(64px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes move-2 {
+    from {
+      transform: translateX(64px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes move-3 {
+    from {
+      transform: translateX(-64px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes move-4 {
+    from {
+      transform: translateY(-64px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@layer utilities {
+  .counted::before {
+    counter-increment: section;
+    content: '0' counter(section);
+    font-size: 32px;
+    color: hsl(233, 8%, 79%);
+    font-weight: 700;
+  }
+}

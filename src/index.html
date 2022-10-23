@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Homepage</title>
+    <meta
+      name="description"
+      content="The Bright Future of Web 3.0. Hydrogen VS Electric Cars. The Downsides of AI Artistry. Is VC Funding Drying Up? Reviving Retro PCs. Top 10 Laptops of 2022. The Growth of Gaming"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../static/images/favicon-32x32.png"
+    />
+  </head>
+  <body class="flex flex-col items-center min-h-screen gap-12 p-4 bg-offWhite">
+    <!-- Blured background showing up only when side menu is showed -->
+    <div
+      class="h-full w-full bg-[rgb(0_0_0_/_.4)] fixed top-0 backdrop-blur-md pointer-events-none hidden"
+      id="backShadow"
+    ></div>
+
+    <!-- NAVIGATION MENU -->
+    <nav
+      class="flex items-center justify-between w-full max-w-[var(--max-width)] animation-4"
+    >
+      <img
+        src="../static/images/logo.svg"
+        width="65"
+        height="40"
+        alt="Logo"
+        draggable="false"
+      />
+
+      <!-- OPEN SIDE MENU -->
+      <button class="lg:hidden">
+        <img
+          class=""
+          src="../static/images/icon-menu.svg"
+          width="40"
+          height="17"
+          alt="Open the menu"
+          id="openNavElement"
+        />
+      </button>
+
+      <!-- NAV ITEMS -->
+      <div class="hidden lg:flex">
+        <a
+          class="px-6 py-4 duration-300 hover:text-softRed"
+          href="#"
+          draggable="false"
+          >Home</a
+        >
+        <a
+          class="px-6 py-4 duration-300 hover:text-softRed"
+          href="#"
+          draggable="false"
+          >New</a
+        >
+        <a
+          class="px-6 py-4 duration-300 hover:text-softRed"
+          href="#"
+          draggable="false"
+          >Popular</a
+        >
+        <a
+          class="px-6 py-4 duration-300 hover:text-softRed"
+          href="#"
+          draggable="false"
+          >Trending</a
+        >
+        <a
+          class="px-6 py-4 duration-300 hover:text-softRed"
+          href="#"
+          draggable="false"
+          >Categories</a
+        >
+      </div>
+
+      <!-- SIDE MENU -->
+      <aside
+        class="h-full fixed z-[2] top-0 right-0 bg-offWhite overflow-x-hidden duration-500 w-[0]"
+        id="mySidenav"
+      >
+        <button class="absolute top-0 right-0 p-6">
+          <img
+            src="../static/images/icon-menu-close.svg"
+            width="32"
+            height="31"
+            alt="Close the menu"
+            id="closeNavElement"
+          />
+        </button>
+        <div class="flex flex-col w-full mt-32">
+          <a class="px-6 py-4 duration-300 hover:text-softRed" href="#">Home</a>
+          <a class="px-6 py-4 duration-300 hover:text-softRed" href="#">New</a>
+          <a class="px-6 py-4 duration-300 hover:text-softRed" href="#"
+            >Popular</a
+          >
+          <a class="px-6 py-4 duration-300 hover:text-softRed" href="#"
+            >Trending</a
+          >
+          <a class="px-6 py-4 duration-300 hover:text-softRed" href="#"
+            >Categories</a
+          >
+        </div>
+      </aside>
+    </nav>
+
+    <!-- MAIN -->
+    <main
+      class="grid-cols-3 grid-rows-[repeat(3,_auto)] gap-6 gap-y-12 lg:grid max-w-[var(--max-width)] mx-auto"
+    >
+      <!-- MAIN ILLUSTRATION -->
+      <img
+        class="hidden object-cover w-full h-[300px] lg:col-end-3 lg:block lg:col-start-1 animation-3"
+        src="../static/images/image-web-3-mobile.jpg"
+        width="300"
+        height="300"
+        draggable="false"
+        alt="Abstract 3d geometry figurues"
+      />
+      <!-- HEADER -->
+      <header
+        class="pt-8 lg:pt-0 lg:row-start-2 lg:row-end-2 lg:col-start-1 lg:col-end-2 animation-3"
+      >
+        <h1
+          class="font-extrabold text-[40px] lg:text-[54px] leading-[100%] text-center lg:text-left"
+        >
+          The Bright Future of Web 3.0?
+        </h1>
+      </header>
+      <!-- DETAILS ABOUT THE PAGE -->
+      <article
+        class="mx-auto flex flex-col gap-4 lg:gap-8 pt-16 lg:pt-0 text-center lg:text-left max-w-[45ch] lg:row-st animation-1"
+      >
+        <p>
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </p>
+        <a
+          class="uppercase tracking-[4px] flex w-[185px] h-[48px] bg-softRed items-center justify-center text-white mx-auto lg:m-0 hover:bg-veryDarkBlue duration-300 cursor-pointer transition-colors font-bold"
+          href="#"
+          draggable="false"
+          >Read more</a
+        >
+      </article>
+
+      <!-- NEW ARTICLES -->
+      <section
+        class="p-6 mt-16 lg:mt-0 bg-veryDarkBlue lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-3 animation-2"
+      >
+        <h2 class="text-softOrange text-[40px] font-bold">New</h2>
+        <article class="pt-3">
+          <h3 class="text-white text-[20px] font-bold">
+            <a
+              class="duration-300 hover:text-softOrange"
+              href="#"
+              draggable="false"
+              >Hydrogen VS Electric Cars</a
+            >
+          </h3>
+          <p class="pt-3 text-grayishBlue">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </article>
+        <hr class="my-6 border-darkGrayishBlue" />
+        <article class="pt-3">
+          <h3 class="text-white text-[20px] font-bold">
+            <a
+              class="duration-300 hover:text-softOrange"
+              href="#"
+              draggable="false"
+              >The Downsides of AI Artistry</a
+            >
+          </h3>
+          <p class="pt-3 text-grayishBlue">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </article>
+        <hr class="my-6 border-darkGrayishBlue" />
+        <article class="pt-3">
+          <h3 class="text-white text-[20px] font-bold">
+            <a
+              class="duration-300 hover:text-softOrange"
+              href="#"
+              draggable="false"
+              >Is VC Funding Drying Up?</a
+            >
+          </h3>
+          <p class="pt-3 text-grayishBlue">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </article>
+      </section>
+
+      <!-- ARTICLE 1 -->
+      <article class="flex gap-6 mt-16 lg:m-0 animation-1">
+        <img
+          class="self-start"
+          src="../static/images/image-retro-pcs.jpg"
+          width="100"
+          height="127"
+          alt="Retro computers in neon light"
+          draggable="false"
+        />
+        <div class="">
+          <p class="counted"></p>
+          <h2 class="font-bold text-[18px]">
+            <a
+              class="duration-300 hover:text-softRed"
+              href="#"
+              draggable="false"
+              >Reviving Retro PCs</a
+            >
+          </h2>
+          <p class="pt-3 text-darkGrayishBlue">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </article>
+
+      <!-- ARTICLE 2 -->
+      <article class="flex gap-6 mt-8 lg:m-0 animation-1">
+        <img
+          class="self-start"
+          src="../static/images/image-top-laptops.jpg"
+          width="100"
+          height="127"
+          alt="Membrane keyboard keys with red letters viewed closely from an angle"
+          draggable="false"
+        />
+        <div class="">
+          <p class="counted"></p>
+          <h2 class="font-bold text-[18px]">
+            <a
+              class="duration-300 hover:text-softRed"
+              href="#"
+              draggable="false"
+              >Top 10 Laptops of 2022</a
+            >
+          </h2>
+          <p class="pt-3 text-darkGrayishBlue">
+            Out best picks for varous needs and budgets.
+          </p>
+        </div>
+      </article>
+
+      <!-- ARTICLE 3 -->
+      <article class="flex gap-6 mt-8 lg:m-0 animation-1">
+        <img
+          class="self-start"
+          src="../static/images/image-gaming-growth.jpg"
+          width="100"
+          height="127"
+          alt="Hand of a guy and a gamepad in midair"
+          draggable="false"
+        />
+        <div class="">
+          <p class="counted"></p>
+          <h2 class="font-bold text-[18px]">
+            <a
+              class="duration-300 hover:text-softRed"
+              href="#"
+              draggable="false"
+              >The Growth of Gaming</a
+            >
+          </h2>
+          <p class="pt-3 text-darkGrayishBlue">
+            How the pandemic has sparked fresh opportunities
+          </p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
