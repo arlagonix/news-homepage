@@ -38,7 +38,16 @@ module.exports = merge(common, {
     minimizer: [
       '...',
       new MiniCssExtractPlugin({ filename: 'index.css' }),
-      new CssMinimizerPlugin(),
+      new CssMinimizerPlugin({
+        minimizerOptions: {
+          preset: [
+            'default',
+            {
+              discardComments: { removeAll: true },
+            },
+          ],
+        },
+      }),
       new TerserPlugin(),
     ],
   },
